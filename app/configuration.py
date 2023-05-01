@@ -16,6 +16,7 @@ class Settings(BaseSettings):
 
     DATA_DIR: Path = Path(os.getcwd()) / "data"
     SESSIONS_DIR: Path = DATA_DIR / "sessions"
+    SQLITE_PATH: Path = DATA_DIR / "sql_app.db"
 
     # BACKEND_CORS_ORIGINS is a JSON-formatted list of origins
     # e.g: "['http://localhost', 'http://localhost:3000', 'https://backend.example.com']"
